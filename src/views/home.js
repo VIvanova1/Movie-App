@@ -1,15 +1,15 @@
 import { html } from "../../node_modules/lit-html/lit-html.js";
 
 const homeTemplate = () => html `
-            <section id="homePage">
-        <div id="title">
+    <section id="home-page" class="cover-img">
+        <div class="titles title-1">
             <h1>Welcome to Movie App</h1>
             <h3>What you will watch tonight?</h3>
-            <button class="btn"><a href="#">New movies</a></button>
+            <a href="/" class="btn btn-1">2023</a>
         </div>
-        <div id="createMovie">
+        <div class="titles title-2">
             <h3>You already have watch some interesting movie?</h3>
-            <button class="btn btn-second"><a href="#">Share</a></button>
+            <a href="/" class="btn btn-2"><i class="fa-solid fa-user-plus" style="color: #bf8d30;"></i></a>
         </div>
     </section>`
 

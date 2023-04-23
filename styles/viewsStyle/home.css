@@ -1,18 +1,31 @@
-#homePage {
-    background: url('../images/home-image.png');
+.cover-img {
     color: #cccccc;
-    height: 95vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#title {
+#home-page {
+    background: url('../images/home-image.png');
+}
+
+.titles {
     display: inline-block;
     width: fit-content;
     position: relative;
-    top: 11%;
+}
+
+.title-1 {
+    top: 24%;
+    left: 16%;
+    height: 140px;
+}
+
+.title-2 {
+    top: 51%;
     left: 21%;
+    height: 110px;
 }
 
 #title h1,
@@ -22,71 +35,72 @@ h3 {
     font-weight: bolder;
 }
 
-
-/* link to new movies */
-
 .btn {
-    font-weight: 700;
-    font-size: 14px;
-    background-color: #000000;
-    padding: 10px 29px;
-    border: solid #000000 2px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    border-radius: 19px;
-    transition: 1073ms;
-    transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    transition: 1073ms;
-    padding: 10px 30px;
-    transform: translateY(-0px);
-    background-color: #fff;
-    border: solid 2px #ffffff;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-a:hover {
-    color: #000000;
-}
-
-#createMovie {
-    display: inline-block;
-    width: 280px;
+    display: inline-flex;
     position: relative;
-    top: 34%;
-    left: 4%;
+    max-width: 87px;
+    border-radius: 25px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
 }
+
+.btn-1 {
+    font-size: 24px;
+    font-weight: 800;
+    left: 226px;
+    color: white;
+    padding: 0 10px;
+    text-shadow: 4px 3px 4px black;
+}
+
+.btn-2 {
+    left: 0;
+    top: 4px;
+    font-size: 33px;
+}
+
+
+/* tablets style */
 
 @media (min-width: 768px) {
-    #title {
-        top: 20%;
+    .title-1 {
+        top: 30%;
+        left: 30%;
+        height: 140px;
     }
-    #createMovie {
-        top: 73%;
-        left: 17%;
+    .title-2 {
+        top: 54%;
+        left: 6%;
+        width: 58%;
+        height: 100px;
     }
 }
 
 
-/* laptops */
+/* laptops style */
 
 @media (min-width: 1024px) {
-    #createMovie {
-        top: 74%;
-        left: 30%;
+    .title-1 {
+        height: 200px;
     }
-    #title {
-        font-size: 22px;
+    .title-1 h1 {
+        font-size: 50px;
+        padding-bottom: 55px;
+    }
+    .title-1 h3 {
+        font-size: 24px;
+        padding-left: 53px;
+    }
+    .btn-1 {
+        left: 440px;
+        font-size: 32px;
+    }
+    .title-2 {
+        top: 72%;
+        left: -30%;
+        width: 31%;
     }
 }
