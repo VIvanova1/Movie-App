@@ -1,0 +1,18 @@
+{
+    "name": "movieapp",
+    "version": "1.0.0",
+    "description": "This is an app for movies ",
+    "main": "app.js",
+    "scripts": {},
+    "keywords": [
+        "movies",
+        "app",
+        "library"
+    ],
+    "author": "Veneta Ivanova",
+    "license": "ISC",
+    "dependencies": {
+        "lit-html": "^2.7.2",
+        "page": "^1.11.6"
+    }
+}

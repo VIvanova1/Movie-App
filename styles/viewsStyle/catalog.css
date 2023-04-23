@@ -1,0 +1,98 @@
+.catalogCover {
+    background: url('../images/catalog-movie-image.png');
+    color: #cccccc;
+    height: 95vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.css-input {
+    display: inline-block;
+    width: 155px;
+    position: relative;
+    top: 65%;
+    left: 51%;
+    padding: 13px;
+    font-size: 13px;
+    border-width: 4px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 26px;
+    box-shadow: 3px -1px 17px rgba(66, 66, 66, .41);
+    text-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+}
+
+.css-input:focus {
+    outline: none;
+}
+
+#icon-search {
+    position: relative;
+    top: 65.5%;
+    left: 42%;
+}
+
+#catalogTitle {
+    text-align: center;
+    padding-right: 15px;
+    color: beige;
+    font-weight: 900;
+    text-shadow: 1px 1px black;
+    margin-top: 153px;
+}
+
+#catalog {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card {
+    text-align: center;
+    align-self: center;
+    text-transform: uppercase;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.movie-card img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .css-input {
+        top: 44%;
+        left: 67%;
+    }
+    #icon-search {
+        top: 44.5%;
+        left: 62%;
+    }
+    #catalogTitle {
+        text-align: end;
+        color: black;
+    }
+    #catalog {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .movie-card {
+        width: 40%;
+    }
+}
+
+
+/* laptops */
+
+@media (min-width: 1024px) {
+    .movie-card {
+        width: 30%;
+    }
+    #catalogTitle {
+        margin-right: 100px;
+    }
+}
